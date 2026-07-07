@@ -1,0 +1,718 @@
+/* ── ENCABEZADO ZONA GAMER ── */
+.navbar-superior {
+    background-color: #090a0f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-icon { font-size: 1.8rem; }
+.logo-text {
+    font-size: 1.8rem;
+    color: #a855f7;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
+    font-family: Arial, sans-serif;
+}
+.nav-links { display: flex; gap: 1.5rem; }
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    padding: 0.3rem 0.8rem;
+    font-family: Arial, sans-serif;
+}
+.nav-links a:hover, .nav-links a.active-link {
+    color: #22d3ee;
+    border-bottom: 3px solid #22d3ee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #0e1117;
+
+    color: white;
+
+}
+
+
+
+
+
+
+
+.logo-img {
+
+    width:220px;
+
+    height:auto;
+
+}
+
+
+
+
+
+
+
+
+
+main{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:30px 0;
+
+}
+
+
+
+.titulo-principal {
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.titulo-principal h1 {
+
+    font-size:42px;
+
+    color:#a855f7;
+
+    margin-bottom:15px;
+
+}
+
+.titulo-principal p {
+
+    color:#d1d5db;
+
+    font-size:18px;
+
+}
+
+
+.banner {
+
+    display:flex;
+
+    gap:40px;
+
+    background:#1a1f2e;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-bottom:50px;
+
+}
+
+.banner-imagen {
+
+    width:45%;
+
+}
+
+.banner-imagen img {
+
+    width:100%;
+
+    border-radius:10px;
+
+}
+
+.banner-texto {
+
+    width:55%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.banner-texto h2 {
+
+    color:#22d3ee;
+
+    margin-bottom:15px;
+
+}
+
+.banner-texto h3 {
+
+    font-size:35px;
+
+    margin-bottom:20px;
+
+}
+
+.banner-texto p {
+
+    line-height:28px;
+
+    margin-bottom:25px;
+
+}
+
+.banner-texto button {
+
+    width:170px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#a855f7;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.banner-texto button:hover {
+
+    background:#22d3ee;
+
+}
+
+
+
+.busqueda {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-bottom:45px;
+
+}
+
+.busqueda input {
+
+    width:500px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+.busqueda button {
+
+    padding:12px 30px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#a855f7;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.busqueda button:hover {
+
+    background:#22d3ee;
+
+}
+
+section {
+
+    margin-bottom:50px;
+
+}
+
+section h2 {
+
+    font-size:28px;
+
+    color:#ffffff;
+
+    margin-bottom:20px;
+
+    border-left:6px solid #a855f7;
+
+    padding-left:15px;
+
+}
+
+
+.contenedor {
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+}
+
+
+.contenedor-juegos {
+
+    display:flex;
+
+    gap:20px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    padding-bottom:15px;
+
+}
+
+
+
+.contenedor-juegos::-webkit-scrollbar {
+
+    height:8px;
+
+}
+
+.contenedor-juegos::-webkit-scrollbar-track {
+
+    background:#1a1f2e;
+
+    border-radius:20px;
+
+}
+
+.contenedor-juegos::-webkit-scrollbar-thumb {
+
+    background:#a855f7;
+
+    border-radius:20px;
+
+}
+
+
+
+.juego{
+
+    width:260px;
+    min-width:260px;
+    background:#1a1f2e;
+    border-radius:10px;
+    overflow:hidden;
+
+}
+
+.juego:hover {
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 20px rgba(168,85,247,.6);
+
+}
+
+
+
+.juego img {
+
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    display:block;
+    transition :.4s;
+}
+
+
+
+.juego:hover img {
+
+    transform:scale(1.08);
+
+}
+
+
+
+.juego h3 {
+
+    padding:15px;
+
+    font-size:18px;
+
+    color:white;
+
+}
+
+.juego p {
+
+    padding:0 15px 15px;
+
+    color:#facc15;
+
+    font-size:17px;
+
+}
+
+
+
+.juego button {
+
+    margin:15px;
+
+    padding:10px;
+
+    width:calc(100% - 30px);
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#a855f7;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.juego button:hover {
+
+    background:#22d3ee;
+
+}
+
+
+
+h2:hover {
+
+    color:#22d3ee;
+
+    transition:.3s;
+
+}
+
+.banner,
+.juego{
+
+    animation: aparecer .7s ease;
+
+}
+
+@keyframes aparecer {
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+.boton-juego {
+
+    background:#a855f7;
+
+    color:white;
+
+    text-align:center;
+
+    padding:10px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.boton-juego:hover {
+
+    background:#22d3ee;
+
+}
+
+.descripcion {
+
+    margin-top:15px;
+
+    color:#d1d5db;
+
+    line-height:24px;
+
+    text-align:justify;
+
+}
+
+
+
+.juego h3 {
+
+    transition:.3s;
+
+}
+
+.juego:hover h3 {
+
+    color:#22d3ee;
+
+}
+
+
+
+@media(max-width:900px) {
+
+.banner {
+
+    flex-direction:column;
+
+}
+
+.banner-imagen {
+
+    width:100%;
+
+}
+
+.banner-texto {
+
+    width:100%;
+
+}
+
+.busqueda {
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.busqueda input {
+
+    width:100%;
+
+}
+
+
+
+
+
+}
+
+
+
+html{ 
+
+    scroll-behavior:smooth;
+
+}
+
+img {
+
+    user-select:none;
+
+}
+
+a {
+
+    transition:.3s;
+
+}
+
+details {
+
+    margin:15px;
+
+}
+
+summary {
+
+    list-style:none;
+
+}
+
+summary::-webkit-details-marker {
+
+    display:none;
+
+}
+
+.menu-categorias {
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin:40px 0;
+
+}
+
+.menu-categorias a {
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#1a1f2e;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+    font-weight:bold;
+
+    border:2px solid transparent;
+
+}
+
+.menu-categorias a:hover {
+
+    background:#a855f7;
+
+    transform:translateY(-3px);
+
+    border-color:#22d3ee;
+
+}
+
+html {
+
+    scroll-behavior:smooth;
+
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+body {
+    overflow-x:hidden;
+}
+
+@media screen and (max-width:1024px) {
+
+    
+
+    
+
+    .banner {
+        flex-direction:column;
+    }
+
+    .banner img {
+        width:100%;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    
+
+    .menu-categorias {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .menu-categorias a {
+        margin:5px;
+    }
+
+    .buscador {
+        flex-direction:column;
+    }
+
+    .buscador input {
+        width:95%;
+        margin-bottom:10px;
+    }
+
+    .buscador button {
+        width:95%;
+    }
+
+    h1 {
+        font-size:30px;
+        text-align:center;
+    }
+
+    h2 {
+        font-size:24px;
+    }
+
+}
+
+.titulo-principal h1 {
+    color: #0e1117;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px #a855f7;
+}
+
+.titulo-principal p {
+    color: #0e1117;
+    font-size: 18px;
+    line-height: 30px;
+}

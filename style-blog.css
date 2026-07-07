@@ -1,0 +1,217 @@
+/* ── ENCABEZADO ZONA GAMER ── */
+.navbar-superior {
+    background-color: #090a0f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo-area { display: flex; align-items: center; gap: 10px; }
+.logo-icon { font-size: 1.8rem; }
+.logo-text {
+    font-size: 1.8rem;
+    color: #a855f7;
+    letter-spacing: 1px;
+    font-family: Arial, sans-serif;
+}
+.nav-links { display: flex; gap: 1.5rem; }
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    padding: 0.3rem 0.8rem;
+    font-family: Arial, sans-serif;
+}
+.nav-links a:hover, .nav-links a.active-link {
+    color: #22d3ee;
+    border-bottom: 3px solid #22d3ee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Encabezado */
+
+.navbar-superior {
+    background-color: #090a0f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon { font-size: 1.8rem; }
+
+.logo-text {
+    font-size: 1.8rem;
+    color: #a855f7;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
+}
+
+.nav-links { display: flex; gap: 1.5rem; }
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    padding: 0.3rem 0.8rem;
+}
+
+
+
+body{
+    background-color: var(--color_fondo);
+}
+
+/* Fin del encabezado */
+
+/* Contenido de la página */
+
+.indice li{
+    padding: 5px;
+}
+
+.indice, .indice p, .indice li{
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    list-style-type: none;
+    font-family: Atkinson Hyperlegible;
+    font-size: 20px;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    font-family: PrSt;
+    color: white;
+    -webkit-text-stroke: 0.04px black;
+}
+
+h2{
+    background-color: #212538;
+    text-align: center;
+}
+
+.caja{
+    margin: auto;
+    background-color: var(--color_caja);
+    color: white;
+    width: 80%;
+    font-family: Atkinson Hyperlegible;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+p{
+    padding: 20px;
+}
+
+ol{
+    padding: 30px;
+}
+
+.contenido{
+    display: flex;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px;
+}
+
+.imagenes img {
+    width: 100%;
+    height: auto;
+}
+
+#imagenes{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenido2{
+    display: flex;
+}
+
+.contenido2 ol{
+    padding-left: 35px;
+}
+
+.monokuma{
+    padding: 20px;
+    width:250px;
+    height: 350px;
+}
+
+.makoto{
+    width: 250px;
+}
+
+a:hover{
+    color: #356abe;
+}
+
+.imagenes:hover{
+    transition: 150ms;
+    transform: scale(0.98);
+    background-color: #1e293b;
+    cursor: pointer;
+}
+
+footer{
+    color: white;
+}
+/* Fin del contenido */
+
+/* Ajustes adicionales, declaración de variables, etc. */
+
+@font-face {
+    font-family: PrSt;
+    src: url(fonts/press-start-2p-latin-400-normal.ttf);
+}
+
+@font-face {
+    font-family: Atkinson Hyperlegible;
+    src: url(fonts/atkinson-hyperlegible.ttf);
+}
+
+:root{
+    --color_fondo: #0e1117;
+    --color_caja: #090a0f;
+}
